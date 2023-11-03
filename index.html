@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Scroll Arriba-->
+    <a href="#home" class="scroll-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Victor Alejá</a>
+
+            <ul class="navbar">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <div class="menu-icon">
+                <div class="linea1"></div>
+                <div class="linea2"></div>
+                <div class="linea3"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home container" id="home">
+        <div class="home-container">
+            <div class="home-img">
+                <img src="img/porf2.jpg" alt="">
+            </div>
+            <div class="home-text">
+                <h3>Que tal</h3>
+                <h2>Soy <span class="color">Victor</span></h2>
+                <p>
+                    Actualmente soy estudiante de la carrera de Ingeniería En Sistemas
+                    en la universidad Mariano Gálvez de Guatemala, me gusta todo lo relacionado 
+                    a la tecnología.
+                </p>
+
+                <div class="social">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about container" id="about">
+        <h2 class="heading">Sobre Mí</h2>
+        <!---->
+        <div class="about-content">
+            <div class="about-data">
+                <span>Sobre Mí</span>
+                <h2>Estudiante,<br>
+                    Desarrollador
+                </h2>
+                <a href="#" class="btn" download="">
+                    Descarga mi CV
+                    <i class="bx bx-download"></i>
+                </a>
+            </div>
+            <div class="about-text">
+                <p>¡Hola! Soy Victor, un apasionado estudiante de ingeniería 
+                    en sistemas con un enfoque en el desarrollo web. 
+                    Mi viaje en el mundo de la tecnología comenzó con una curiosidad 
+                    insaciable y un deseo constante de aprender.</p>
+                <p>
+                    Estoy en las últimas etapas de mi carrera, pero eso no ha disminuido mi 
+                    entusiasmo ni mi determinación. Actualmente, estoy inmerso en el 
+                    emocionante mundo del desarrollo web y estoy aprendiendo 
+                    tecnologías web, como HTML, CSS, JavaScript, PHP(laravel). Mis proyectos personales, como 
+                    un pequeño sistema de inventarios con PHP laravel y MySQL subido a un servidor de AWS y este
+                    portafolio, han sido mi laboratorio de 
+                    aprendizaje y mi espacio para explorar y crear.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Portafolio-->
+    <section class="portafolio container" id="portfolio">
+        <h2 class="heading">Portafolio</h2>
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <img src="img/proj1.png" alt="" class="portfolio-img">
+                <!--Overlay-->
+                <div class="portfolio-overlay">
+                    <h2>Sistema Inventarios PHP con login</h2>
+                    <a href="http://3.134.105.164/login">
+                        <i class="bx bx-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/proj2.png" alt="" class="portfolio-img">
+                <!--Overlay-->
+                <div class="portfolio-overlay">
+                    <h2>Página Web Tienda de Videojuegos</h2>
+                    <a href="https://pixel-two-henna.vercel.app/">
+                        <i class="bx bx-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/proj3.png" alt="" class="portfolio-img">
+                <!--Overlay-->
+                <div class="portfolio-overlay">
+                    <h2>Portafolio</h2>
+                    <a href="#">
+                        <i class="bx bx-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Proyectos-->
+    <section class="projects container" id="projects">
+        <h2 class="heading">Proyectos</h2>
+        <!--contenedor-->
+        <div class="projects-content">
+            <div class="project-box">
+                <h2>5+</h2>
+                <span>Proyectos Completados con otras tecnologías como Java, Python, C++</span>
+            </div>
+            <div class="project-box">
+                <h2>3+</h2>
+                <span>Proyectos Web</span>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto-->
+    <section class="contact container" id="contact">
+        <!---->
+        <h2 class="heading">Contactame</h2>
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Nombre" class="name" required>
+            <input type="email" name="" id="" placeholder="Correo electrónico..." class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..." class="message" required></textarea>
+            <input type="submit" value="Enviar" class="send-btn">
+        </form>
+    </section>
+
+    <!--Footer-->
+    <section class="footer container" id="footer">
+        <div class="social">
+            <a href="valejac@miumg.edu.gt"><i class="bx bx-envelope"></i></a>
+        </div>
+
+        <p>&#169; Victor Alejá</p>
+    </section>
+
+    <!--Email JS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('z3N1SvBWA_4suRAky')
+    </script>
+
+    <!--JS link-->
+    <script src="js/main.js"></script>
+</body>
+</html>
